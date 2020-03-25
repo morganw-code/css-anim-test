@@ -36,7 +36,7 @@
 .flex-item {
     width: 50px;
     height: 50px;
-    border: 1px solid blue;
+    border: 1px solid #FFF;
     transition: 1s;
 }
 
@@ -59,6 +59,22 @@
     100% { background: red; }
 }
 
+@keyframes container3-anim {
+    0%   { justify-content: center }
+    25%  { justify-content: space-between; }
+    50%  { justify-content: space-around; }
+    75%  { justify-content: space-evenly; }
+    100% { justify-content: center; }
+}
+
 .flex-item.item2 {
     animation: my-animation 5s infinite;
+}
+
+.flex-item.item3 {
+    border: 1px solid #FFF;
+}
+
+.flex-container.container3 {
+    animation: container3-anim 5s infinite;
 }
